@@ -1,77 +1,79 @@
+/* Styles for the main panel container */
 .panel {
-  align-items: center;
-  background-color: rgb(224, 111, 111);
-  border: 4px rgb(0, 3, 8) solid;
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  text-align: center;
-  width: 400px;
-  z-index: 5;
+  align-items: center; /* Center aligns children vertically */
+  background-color: rgb(224, 111, 111); /* Soft red background color */
+  border: 4px rgb(0, 3, 8) solid; /* Dark border for contrast */
+  border-radius: 8px; /* Rounded corners for the panel */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  display: flex; /* Uses flexbox for positioning children */
+  flex-direction: column; /* Aligns children in a vertical stack */
+  padding: 20px; /* Spacing inside the panel */
+  text-align: center; /* Centers text within the panel */
+  width: 400px; /* Fixed width for the panel */
+  z-index: 5; /* Ensures the panel stacks on top of other elements */
 }
 
+/* Style for the main heading inside the game start section */
 #game-start > h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 32px; /* Larger text for main heading */
+  margin-bottom: 20px; /* Spacing below the heading */
 }
 
+/* General style for all first-level headings */
 h1 {
-  color: #B31;
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 48px;
-  margin: 0px;
-  margin-bottom: 20px;
+  color: #B31; /* Dark red color for text */
+  font-family: 'Berkshire Swash', cursive; /* Cursive font for aesthetic appeal */
+  font-size: 48px; /* Large font size for emphasis */
+  margin: 0px; /* No margin around the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
 }
 
+/* Style for third-level headings */
 h3 {
-  color: rgb(0, 3, 3);
-  font-family: 'Quicksand', sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 0px;
-  margin-bottom: 20px;
+  color: rgb(0, 3, 3); /* Almost black color for text */
+  font-family: 'Quicksand', sans-serif; /* Modern, readable font */
+  font-size: 28px; /* Medium-large font size */
+  font-weight: bold; /* Bold text for importance */
+  margin: 0px; /* No margin around the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
 }
 
+/* Style for fourth-level headings */
 h4 {
-  color: rgb(145, 43, 51);
-  font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px;
-  margin-bottom: 10px;
+  color: rgb(145, 43, 51); /* Dark pinkish-red color */
+  font-family: 'Quicksand', sans-serif; /* Consistent font with h3 */
+  font-size: 18px; /* Smaller font size for less emphasis */
+  font-weight: bold; /* Bold text for clarity */
+  margin: 0px; /* No margin around the heading */
+  margin-bottom: 10px; /* Small spacing below the heading */
 }
 
+/* Style for apple icon in the game */
 .apple {
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  margin-top: 80px;
-  margin-left: 140px;
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  height: 60px; /* Fixed height */
+  width: 60px; /* Fixed width */
+  margin-top: 80px; /* Distance from the top */
+  margin-left: 140px; /* Distance from the left */
 }
 
+/* Style for the play again button */
 .play-again {
-  height: 40px;
-  width: 150px;
-  background-color: rgb(14, 2, 1);
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 5px;
-  font-weight: bold;
-  color: rgb(231, 136, 136);
-  font-size: 18px;
+  height: 40px; /* Fixed height */
+  width: 150px; /* Fixed width */
+  background-color: rgb(14, 2, 1); /* Dark red color */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  border-radius: 8px; /* Rounded corners */
+  padding: 5px; /* Padding inside the button */
+  font-weight: bold; /* Bold text for legibility */
+  color: rgb(231, 136, 136); /* Light pink color for text */
+  font-size: 18px; /* Readable font size */
 }
 
-#game-start.hidden {
-  display: none;
-}
-
-#game-lost.hidden {
-  display: none;
-}
-
+/* Styles to hide game states */
+#game-start.hidden,
+#game-lost.hidden,
 #game-won.hidden {
-  display: none;
+  display: none; /* Hides elements when game states change */
 }
 
