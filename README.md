@@ -80,7 +80,7 @@ A heartfelt thanks also goes to the numerous forums, tutorial creators, and docu
 Special thanks to the developers and artists who have contributed to making "The Wolf's Shadow" a reality:
 
 - **Nour** - freakinlight - nour.mazouz@centrale-casablanca.ma
-- **Aya** - aya.mazili@gmail.com
+- **Aya** - ayamazili15@gmail.com \ aya.mazili@centrale-casablanca.ma
 - **Youssef** - 6iyoussef@gmail.com
 - **Alberic** - iriealberic@email.com
 - **Yassine** - yassinouassour20@gmail.com
