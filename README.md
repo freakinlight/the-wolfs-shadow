@@ -72,7 +72,7 @@ We extend our deepest gratitude to everyone who contributed to the success of "T
 
 - **The original storytellers and guardians of the "Little Red Riding Hood" fairy tale**, which served as a profound inspiration for the thematic elements and narrative of our game.
 - **The vibrant open source community**, whose diverse range of tools and libraries played a pivotal role in the technical development of our project.
-- **École Centrale Casablanca (ECC)**, for fostering an innovative and supportive environment that encourages the exploration and realization of such creative projects.
+- **École Centrale Casablanca**, for fostering an innovative and supportive environment that encourages the exploration and realization of such creative projects.
 
 A heartfelt thanks also goes to the numerous forums, tutorial creators, and documentation authors within the tech community. Your dedication to sharing knowledge and facilitating learning experiences is truly invaluable and appreciated.
 
