@@ -1,85 +1,99 @@
-/* COLORS
-red:    #B31
-back:   #DEA
-far:    #9C8
-mid:    #597
-near:   #255
-fore:   #235
-*/
+/* COLORS */
+/* Définition des couleurs principales utilisées dans le fichier CSS */
+red:    #B31; /* Rouge vif pour les titres et les éléments importants */
+back:   #DEA; /* Beige clair utilisé en arrière-plan ou pour les bordures */
+far:    #9C8; /* Vert clair utilisé pour des éléments lointains */
+mid:    #597; /* Bleu-gris pour les éléments intermédiaires */
+near:   #255; /* Bleu foncé pour les éléments proches */
+fore:   #235; /* Bleu marine utilisé pour les éléments au premier plan */
 
+/* PANELS */
+/* Style pour les panneaux, tels que les écrans de démarrage, de victoire ou de défaite */
 .panel {
-  align-items: center;
-  background-color: rgb(224, 111, 111);
-  border: 4px rgb(0, 3, 8) solid;
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  text-align: center;
-  width: 400px;
-  z-index: 5;
+  align-items: center; /* Centrage vertical des enfants */
+  background-color: rgb(224, 111, 111); /* Rouge clair en arrière-plan */
+  border: 4px rgb(0, 3, 8) solid; /* Bordure noire épaisse */
+  border-radius: 8px; /* Coins arrondis */
+  box-sizing: border-box; /* Inclut les bordures et padding dans la taille totale */
+  display: flex; /* Affichage en flexbox */
+  flex-direction: column; /* Orientation verticale des enfants */
+  padding: 20px; /* Espace intérieur */
+  text-align: center; /* Centrage horizontal du texte */
+  width: 400px; /* Largeur fixe */
+  z-index: 5; /* Assure que le panneau est au-dessus d'autres éléments */
 }
 
+/* TITLES */
+/* Style pour le titre principal du panneau de démarrage */
 #game-start > h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 32px; /* Taille de la police */
+  margin-bottom: 20px; /* Espacement inférieur */
 }
 
+/* Style global pour les titres h1 */
 h1 {
-  color: #B31;
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 48px;
-  margin: 0px;
-  margin-bottom: 20px;
+  color: #B31; /* Couleur rouge vif */
+  font-family: 'Berkshire Swash', cursive; /* Police fantaisie */
+  font-size: 48px; /* Grande taille de police */
+  margin: 0px; /* Aucun espacement externe */
+  margin-bottom: 20px; /* Espacement inférieur */
 }
 
+/* Style global pour les titres h3 */
 h3 {
-  color: rgb(0, 3, 3);
-  font-family: 'Quicksand', sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 0px;
-  margin-bottom: 20px;
+  color: rgb(0, 3, 3); /* Couleur noire */
+  font-family: 'Quicksand', sans-serif; /* Police moderne */
+  font-size: 28px; /* Taille de police moyenne */
+  font-weight: bold; /* Texte en gras */
+  margin: 0px; /* Aucun espacement externe */
+  margin-bottom: 20px; /* Espacement inférieur */
 }
 
+/* Style global pour les titres h4 */
 h4 {
-  color: rgb(145, 43, 51);
-  font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px;
-  margin-bottom: 10px;
+  color: rgb(145, 43, 51); /* Rouge sombre */
+  font-family: 'Quicksand', sans-serif; /* Police moderne */
+  font-size: 18px; /* Taille de police plus petite */
+  font-weight: bold; /* Texte en gras */
+  margin: 0px; /* Aucun espacement externe */
+  margin-bottom: 10px; /* Espacement inférieur */
 }
 
+/* ELEMENTS SPECIFIQUES */
+/* Style pour un élément spécifique représentant une "pomme" */
 .apple {
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  margin-top: 80px;
-  margin-left: 140px;
+  position: absolute; /* Position absolue dans le conteneur parent */
+  height: 60px; /* Hauteur fixe */
+  width: 60px; /* Largeur fixe */
+  margin-top: 80px; /* Décalage supérieur */
+  margin-left: 140px; /* Décalage gauche */
 }
 
+/* Style pour le bouton "jouer à nouveau" */
 .play-again {
-  height: 40px;
-  width: 150px;
-  background-color: rgb(14, 2, 1);
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 5px;
-  font-weight: bold;
-  color: rgb(231, 136, 136);
-  font-size: 18px;
+  height: 40px; /* Hauteur fixe */
+  width: 150px; /* Largeur fixe */
+  background-color: rgb(14, 2, 1); /* Rouge foncé */
+  box-sizing: border-box; /* Inclut les bordures et padding dans la taille totale */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 5px; /* Espace intérieur */
+  font-weight: bold; /* Texte en gras */
+  color: rgb(231, 136, 136); /* Rose clair */
+  font-size: 18px; /* Taille de la police */
 }
 
+/* ETATS SPECIFIQUES */
+/* Cacher le panneau de démarrage si la classe "hidden" est appliquée */
 #game-start.hidden {
-  display: none;
+  display: none; /* Masque complètement l'élément */
 }
 
+/* Cacher le panneau de défaite si la classe "hidden" est appliquée */
 #game-lost.hidden {
-  display: none;
+  display: none; /* Masque complètement l'élément */
 }
 
+/* Cacher le panneau de victoire si la classe "hidden" est appliquée */
 #game-won.hidden {
-  display: none;
+  display: none; /* Masque complètement l'élément */
 }
