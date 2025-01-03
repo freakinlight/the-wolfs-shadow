@@ -1,8 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* General Reset */
+/* Apply a basic reset to all elements to negate browser default styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,43 +13,56 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  border: 0; /* Removes default border */
+  font-size: 100%; /* Ensures consistent font sizing */
+  font: inherit; /* Inherits font properties from parent */
+  vertical-align: baseline; /* Aligns the baseline of the element with the baseline of its parent */
 }
 
-/* HTML5 display-role reset for older browsers */
+/* HTML5 Display Role Reset for Older Browsers */
+/* Ensures that HTML5 structural elements render as block by default in older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-display: block;
+  display: block;
 }
+
+/* Additional Body Styles */
 body {
-line-height: 1;
+  line-height: 1; /* Sets a default line height */
 }
+
+/* List Styles */
 ol, ul {
-list-style: none;
+  list-style: none; /* Removes list bullets */
 }
+
+/* Quotation Styles */
 blockquote, q {
-quotes: none;
+  quotes: none; /* Removes quotation marks */
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-content: '';
-content: none;
-}
-table {
-border-collapse: collapse;
-border-spacing: 0;
-}
-a {
-  color: inherit;
+  content: ''; /* Removes content before and after quotes */
+  content: none;
 }
 
-button{
-  background-color: transparent;
-  border: none;
-  outline: none;
+/* Table Styles */
+table {
+  border-collapse: collapse; /* Collapses border to a single border */
+  border-spacing: 0; /* Removes default border spacing */
 }
+
+/* Link Color Inheritance */
+a {
+  color: inherit; /* Ensures links inherit the text color from the parent */
+}
+
+/* Button Reset */
+button {
+  background-color: transparent; /* Makes button background transparent */
+  border: none; /* Removes border from buttons */
+  outline: none; /* Removes focus outline from buttons */
+}
+
