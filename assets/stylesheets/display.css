@@ -1,165 +1,168 @@
+/* Base styles for the body to center content and set a dark background */
 body {
   align-items: center;
-  background-color: rgb(0, 3, 3);
+  background-color: rgb(0, 3, 3); /* Almost black background color for contrast */
   display: flex;
-  flex-direction: column;
-  font-family: 'Quicksand', sans-serif;
+  flex-direction: column; /* Stacks child elements vertically */
+  font-family: 'Quicksand', sans-serif; /* Modern, readable font for overall typography */
 }
 
+/* Styling for the page header, setting color and typography */
 header {
-  color: #B31;
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 72px;
-  margin: 20px 0px;
+  color: #B31; /* Dark red color for emphasis */
+  font-family: 'Berkshire Swash', cursive; /* Decorative, cursive font for aesthetic flair */
+  font-size: 72px; /* Large font size for header to stand out */
+  margin: 20px 0px; /* Vertical spacing around the header */
 }
 
+/* Container for canvas with specific dimensions and styling */
 .canvas-box {
-  border: 8px rgb(156, 41, 41) solid;
-  border-radius: 8px;
-  height: 398px;
-  position: relative;
-  width: 800px;
+  border: 8px rgb(156, 41, 41) solid; /* Thick, dark red border for visibility */
+  border-radius: 8px; /* Rounded corners for the canvas box */
+  height: 398px; /* Fixed height for consistency */
+  position: relative; /* Enables absolute positioning of child elements like canvas */
+  width: 800px; /* Fixed width for consistency */
 }
 
+/* Styling for touch interaction layer over the canvas */
 #touch-screen {
-  align-items: center;
+  align-items: center; /* Center items vertically */
   display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-  z-index: 5;
+  height: 100%; /* Full height of parent */
+  justify-content: center; /* Center items horizontally */
+  width: 100%; /* Full width of parent */
+  z-index: 5; /* Ensures it stays above the canvas visually */
 }
 
+/* Base styles for the canvas element */
 canvas {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Includes padding and border in element's dimensions */
   display: block;
-  position: absolute;
+  position: absolute; /* Positioned relative to its nearest positioned ancestor */
 }
 
+/* Timer display with specific positioning and styling */
 #timer {
   align-items: center;
-  background-color: #235;
-  border: 2px solid #DEA;
+  background-color: #235; /* Dark blue background for visibility */
+  border: 2px solid #DEA; /* Light border color for contrast */
   border-radius: 8px;
   box-sizing: border-box;
-  color: #DEA;
+  color: #DEA; /* Light text color for readability */
   display: flex;
   font-family: 'Berkshire Swash', cursive;
-  font-size: 28px;
+  font-size: 28px; /* Medium-large font size for visibility */
   height: 40px;
   justify-content: flex-start;
   margin: 0px;
-  margin-left: 320px;
-  margin-top: -160px;
+  margin-left: 320px; /* Positions the timer to the right within its container */
+  margin-top: -160px; /* Positions the timer upwards within its container */
   padding: 5px 12px 10px 12px;
-  position: absolute;
+  position: absolute; /* Absolute positioning relative to nearest positioned ancestor */
   width: 120px;
 }
 
-/* CONTROL PANEL */
-
+/* Styling for the control panel at the bottom of the screen */
 .control-panel {
   align-items: center;
-  background-color: rgb(0, 0, 0);
-  border: 4px rgb(156, 41, 41) solid;
+  background-color: rgb(0, 0, 0); /* Black background for contrast */
+  border: 4px rgb(156, 41, 41) solid; /* Dark red border matching the canvas box */
   border-radius: 8px;
   box-sizing: border-box;
-  color: rgb(156, 41, 41);
+  color: rgb(156, 41, 41); /* Dark red text color for theme consistency */
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Layout child buttons in a row */
   height: 100px;
-  justify-content: space-between;
-  margin-top: 30px;
-  padding: 20px;
+  justify-content: space-between; /* Space between items for a clean layout */
+  margin-top: 30px; /* Space above the control panel */
+  padding: 20px; /* Padding around items within the control panel */
   text-align: center;
-  width: 816px;
+  width: 816px; /* Width slightly larger than canvas to align edges */
 }
 
+/* Button styles with hover effects for interactivity */
 button {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 60px;
   width: 60px;
-  border-radius: 50%;
-  color: #235;
-  font-size: inherit;
+  border-radius: 50%; /* Circular buttons */
+  color: #235; /* Dark blue text color for contrast */
 }
 
 button:hover {
-  background-color: rgb(202, 63, 63);
+  background-color: rgb(202, 63, 63); /* Change background on hover for user feedback */
   cursor: pointer;
-  transition: 0.5s;
-  transform: scale(1.1);
+  transition: 0.5s; /* Smooth transition for hover effects */
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
 }
 
+/* Additional controls with specific layout and typography settings */
 .controls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 140px;
-  font-size: 50px;
+  width: 140px; /* Ensures buttons are evenly spaced */
+  font-size: 50px; /* Large font size for icons within the buttons */
 }
 
-.fa-volume-up {
-  font-size: 45px;
+.fa-volume-up, .fa-volume-mute {
+  font-size: 45px; /* Specific size for volume icons */
 }
 
-.fa-volume-mute {
-  font-size: 45px;
-}
-
+/* Paragraph styles for descriptive text within the interface */
 p {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 5px;
+  font-size: 24px; /* Clear, readable font size */
+  font-weight: bold; /* Bold for emphasis */
+  margin: 5px; /* Minimal margin for compact layout */
 }
 
-/* FOOTER */
-
+/* Footer styles with flexible layout */
 footer {
   align-items: center;
   box-sizing: border-box;
-  color: rgb(156, 41, 41);
+  color: rgb(156, 41, 41); /* Dark red color for visual consistency */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack footer contents vertically */
   justify-content: space-between;
-  height: 150px;
-  padding: 20px 40px;
-  width: 816px;
+  height: 150px; /* Fixed height for layout consistency */
+  padding: 20px 40px; /* Padding for spacing within the footer */
+  width: 816px; /* Matching width with control panel for alignment */
 }
 
 h5 {
   font-size: 16px;
   font-weight: bold;
-  /* margin: 20px; */
+  /* Commented out margin rule for potential future use */
 }
 
+/* Navigation link styles */
 nav {
   align-items: center;
   display: flex;
-  flex-direction: row;
-  font-size: 50px;
-  justify-content: space-between;
-  width: 200px;
+  flex-direction: row; /* Horizontal layout for nav links */
+  font-size: 50px; /* Large font size for navigational elements */
+  justify-content: space-between; /* Space between items for a clean layout */
+  width: 200px; /* Fixed width to manage spacing */
 }
 
 .link {
-  text-decoration: none;
+  text-decoration: none; /* Removes underline from links */
 }
 
 a {
-  color: rgb(151, 44, 44);
-  height: 50px;
+  color: rgb(151, 44, 44); /* Custom red color for links */
+  height: 50px; /* Fixed height for alignment */
 }
 
 a:hover {
-  color: rgb(179, 50, 50);
-  transition: 0.5s;
-  transform: scale(1.1);
+  color: rgb(179, 50, 50); /* Darker red on hover for feedback */
+  transition: 0.5s; /* Smooth transition for hover effect */
+  transform: scale(1.1); /* Slightly enlarges the link on hover */
 }
 
 i {
-  font-size: 50px;
+  font-size: 50px; /* Large font size for icons */
 }
 
