@@ -1,5 +1,5 @@
 {
-  "name": "red_riding",
+  "name": "The-wolfs-shadow",
   "version": "1.0.0",
   "description": "# The Wolf's Shadow",
   "private": true,
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EbokianLady/little_red.git"
+    "url": "git+https://github.com/freakinlight/The-wolfs-shadow.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EbokianLady/little_red/issues"
+    "url": "https://github.com/freakinlight/The-wolfs-shadow/issues"
   },
-  "homepage": "https://github.com/EbokianLady/little_red#readme",
+  "homepage": "https://github.com/freakinlight/The-wolfs-shadow#readme",
   "dependencies": {
     "easytimer.js": "^3.1.0",
     "lodash": "^4.17.11"
