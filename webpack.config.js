@@ -1,4 +1,4 @@
-const path = require('path');
+co path = require('path');
 
 module.exports = {
   context: __dirname,
