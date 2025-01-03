@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+  <!-- Meta tags for character set and responsive design -->
   <meta charset="utf-8" />
   <title>The Wolf's Shadow</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Link to favicon -->
   <link rel='icon' href='./assets/images/elements/apple.png' type='image/x-icon' />
 
+  <!-- Stylesheet links for resetting styles, display, and popups -->
   <link href="./assets/stylesheets/reset.css" rel="stylesheet">
   <link href="./assets/stylesheets/display.css" rel="stylesheet">
   <link href="./assets/stylesheets/popups.css" rel="stylesheet">
 
+  <!-- Google Fonts for custom typography -->
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
 </head>
 
 <body>
+  <!-- JavaScript bundle file -->
   <script type="text/javascript" src="./dist/bundle.js"></script>
 
+  <!-- Header displaying the game title -->
   <header>
     The Wolf's Shadow
   </header>
 
+  <!-- Canvas box container for game graphics -->
   <div class='canvas-box'>
+    <!-- Multiple layered canvases for different game elements -->
     <canvas id="farCanvas" width="800" height="400"></canvas>
     <canvas id="midCanvas" width="800" height="400"></canvas>
     <canvas id="nearCanvas" width="800" height="400"></canvas>
     <canvas id="houseCanvas" width="800" height="400"></canvas>
     <canvas id="myCanvas" width="800" height="400"></canvas>
     <canvas id="foreCanvas" width="800" height="400"></canvas>
+
+    <!-- Touch screen interaction layer with game states and controls -->
     <div id='touch-screen'>
+      <!-- Timer display -->
       <h2 id='timer'>00:00:0</h2>
+      <!-- Game lost panel with retry button -->
       <div id='game-lost' class='panel hidden'>
         <h1>Game Over</h1>
         <button id='retry' class='play-again'>
           Play Again
         </button>
       </div>
+      <!-- Game won panel with results and restart option -->
       <div id='game-won' class='panel hidden'>
         <h3>You made it safely to Grandma's House.</h3>
         <h4 id='apple-count'>0 Apples Collected</h4>
@@ -50,6 +62,7 @@
           Play Again
         </button>
       </div>
+      <!-- Game start panel with introduction and start game button -->
       <div id='game-start' class='panel'>
         <h1>Once upon a time ... </h1>
         <button id='start' class='play-again'>
@@ -59,8 +72,10 @@
     </div>
   </div>
 
+  <!-- Control panel for sound and game controls -->
   <div class='control-panel'>
     <div class='controls controls-left'>
+      <!-- Mute and unmute buttons -->
       <button id='mute'>
         <i class="fas fa-volume-mute"></i>
       </button>
@@ -69,10 +84,12 @@
       </button>
     </div>
     <span>
+      <!-- Instructions for game play -->
       <p>Press SPACE to jump.</p>
       <p>Collect apples for an energy boost.</p>
     </span>
     <div class='controls'>
+      <!-- Pause and play buttons -->
       <button id='pause'>
         <i class="far fa-pause-circle"></i>
       </button>
@@ -82,6 +99,5 @@
     </div>
   </div>
 </body>
-
 </html>
 
